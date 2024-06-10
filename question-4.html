@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insert row in a table</title>
+</head>
+<body>
+    <table id="sampleTable" border="1">
+        <tr>
+            <td>Row-1 Cell-1</td>
+            <td>Row-1 Cell-2</td>
+        </tr>
+        <tr>
+            <td>Row-2 Cell-1</td>
+            <td>Row-2 Cell-2</td>
+        </tr>
+    </table> <br>
+    <input type="button" onclick="insert_Row()" value="Insert Row">
+
+    <script>
+        function insert_Row() {
+            // Get the table elements by ID
+            var table = document.getElementById('sampleTable');
+
+            // Insert a new row at the end of the table
+            var newRow = table.insertRow();
+
+            // Insert new cells in the new row
+            var cell1 = newRow.insertCell(0);
+            var cell2 = newRow.insertCell(1);
+
+            // Set the content of the new cells
+            cell1.innerHTML = "New Row Cell-1";
+            cell2.innerHTML = "New Row Cell-2";
+        }
+    </script>
+</body>
+
+
+</html>

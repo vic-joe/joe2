@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change Background Color</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="div-mama">
+        <p id="myPara">This is a paragraph</p>
+        <button onclick="changeBackColor()">Change Background</button>
+    </div>
+    
+    <script>
+        function changeBackColor() {
+        var paragraph = document.getElementById('myPara');
+        paragraph.style.backgroundColor = 'red';
+    }
+    </script>
+</body>
+</html>

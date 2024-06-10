@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Remove items from a dropdown list</title>
+</head>
+<body>
+    <form>
+        <select id="colorSelect">
+            <option>Red</option>
+            <option>Green</option>
+            <option>White</option>
+            <option>Black</option>
+        </select>
+        <input type="button" onclick="removecolor()" value="Select and Remove">
+    </form>
+
+    <script>
+        function removecolor() {
+
+            // Get the dropdown element by ID
+            var selectElement = document.getElementById('colorSelect');
+
+            // Get the index of the selected option
+            var selectedIndex = selectElement.selectedIndex;
+
+            // Remove the selected option from the dropdown list
+            selectElement.remove(selectedIndex);
+        }
+    </script>
+</body>
+</html>

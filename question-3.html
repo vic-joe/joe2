@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <p>
+        <a id="ggle" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://www.google.com/">Google</a>
+    </p>
+    <button onclick="getAttributes()">
+        Click here to get attributes value
+    </button>
+
+    <script>
+        function getAttributes() {
+            var link = document.getElementById('ggle');
+            var href = link.getAttribute('href');
+            var hreflang = link.getAttribute('hreflang');
+            var rel = link.getAttribute('rel');
+            var target = link.getAttribute('target');
+            var type = link.getAttribute('type');
+
+            alert ('href: ' + href + '\n' + 'hreflang: ' + hreflang + '\n' + 'rel: ' + rel + '\n' + 'target: ' + target + '\n' + 'type: ' + type); 
+        }
+    </script>
+</body>
+</html>
